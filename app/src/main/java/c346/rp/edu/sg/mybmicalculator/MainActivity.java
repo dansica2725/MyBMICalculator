@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 lastBMI.setText("Last Calculated BMI: ");
                 outcome.setText("");
                 editor.clear();
-                editor.apply();
+                editor.commit();
             }
         });
     }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("lastBMI", String.format("%.1f", BMI));
         editor.putString("outcome", bmiOutcome);
 
-        editor.apply();
+        editor.commit();
     }
 
     @Override
